@@ -1,0 +1,86 @@
+/* IMPOSTAZIONI GENERALI */
+body{
+    margin: 15px;
+    background:white url(../img/sfondo.png);
+}
+
+/* HEADER */
+header{
+    background-color: #23a5e6;
+    margin-bottom: 20px ;
+    box-shadow: 0px 3px 6px 0px black;
+    
+}
+header nav ul{
+    list-style-type: none;
+}
+.pippo{
+    color: white;
+}
+header nav ul a::before{
+    content: "=>";
+}
+header nav ul a::after{
+    content: "<=";
+}
+header nav ul a{
+    text-decoration: none;
+}
+/* MAIN */
+main{
+    box-shadow:0px 3px 3px #444;
+    background-color: white;
+}
+main article ul, main article ol{
+    padding-left: 30px;
+}
+main p:first-of-type{
+    color: lightgray;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+main section{
+    background-color: gainsboro;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    margin: 10px;
+}
+main section fieldset button{
+color: white;
+background-color: rgba(0, 0, 255, 0.911);
+}
+main section fieldset input{
+    border-bottom-style: dotted ;
+}
+/* TABELLE */
+table{
+   margin-top: 15px;
+}
+table thead{
+   background-color: rgba(0, 0, 255, 0.911);
+   color: white;
+}
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+aside div  {
+    background-color: gainsboro;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgba(0, 0, 139, 0.795);
+    color: white;
+}
+footer a{
+    color: palevioletred;
+}
+
+
+
+.babbo{
+    color: rgb(173, 193, 230);
+}

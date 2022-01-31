@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>i form html</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devide-width, initial-scaled=1">
+        <meta name="description" content="come creare un form html">
+
+    </head>
+    <body>
+        <h1>i form in html</h1>
+        <p>simuliamo un form per candidature di lavoro</p>
+        <form action="elaboracodice.php" method="post">
+            <fieldset>
+                <legend>dati personali</legend>
+                <label for="nome">nome e cognome</label>
+                  <input type="text" name="nome" id="nome">
+                  <label for="email">indirizzo email</label>
+                  <input type="email" name="email"id="email" required><br>
+                  <label for="password">inserisci password</label>
+                  <input type="password" name="password" id="password"><br>
+                  <label for="data-nascita">data di nascita</label>
+                  <input type="data-nascita" name="data-nascita" id="data-nascita"><br>
+                  <label>indica il tuo sesso</label>
+                  <input type="radio" name="sesso" id="maschio"> <label for="maschio">m</label> <input type="radio" name="sesso" id="femmina"> <label for="femmina">f</label>
+
+
+            </fieldset>
+            <fieldset>
+                <legend>competenze</legend>
+                <label for="range"></label>
+                <input type="range" name="skill" id="skill" min="1" max="10"><br>
+                <label for="posizione">scegli il tuo ruolo</label>
+                <select name="posizione" id="posizione">
+                    <option value="">scegli</option>
+                    <option value="a">apprendistato</option>
+                    <option value="j">junior web developer</option>
+                    <option value="s">senior web developer</option>
+                </select> <br>
+                <label for="presentazione">presentati in poche righe</label>
+                <textarea name="presentazione" id="presentazione" cols="30" rows="10" placeholder="sii sintetico ma chiaro"></textarea>
+                <label for="cv">invia tuo cv</label>
+                <input type="file" name="cv" id="cv" accept=".doc,.docs,.pdf">
+            </fieldset>
+            <fieldset> <textarea name="privacy" id="privacy" cols="30" rows="10" readonly>testo della privacy</textarea><br>
+                <input type="checkbox" name="accetta" id="accetta" value="si" checked> <label for="accetta">acconsento al trattamento dati</label><br>
+                <button type="submit">invia la candidatura</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
