@@ -1,0 +1,53 @@
+.box1, .box5, .box7{
+    background-color: lightpink;
+}
+.box2, .box4, .box8{
+    background-color: lightgreen;
+}
+.box3, .box6{
+    background-color: rgb(132, 132, 218);
+}
+body{
+    font-size: 3em;
+}
+h2{
+    padding-top: 100px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+   margin: 30px;
+   gap: 30px;
+    background-color: rgb(99, 86, 86);
+    height: 600px;
+    
+}
+div{
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 1px 1px black;
+    
+}
+.box1{
+    transform: rotate(-2deg);
+}
+.box2{
+    transform: rotate(3deg);
+}
+.box3, .box6{
+    transform: rotate(-3deg);
+}
+.box4{
+    transform: rotate(4deg);
+}
+.box5, .box7{
+    transform: rotate(-2deg);
+}
+.box8{
+    transform: rotate(2deg);
+}
+div:hover{
+transform: scale(1.2);
+z-index: 10;
+
+}
