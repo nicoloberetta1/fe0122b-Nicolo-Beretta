@@ -1,0 +1,53 @@
+body{
+    color: #000 ;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.8rem;
+    }
+    /* HEADER */
+    header a{
+    text-decoration: none;
+    }
+    header{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    align-items: baseline;
+    }
+    /* MAIN */
+    h1, h2, h3{
+        font-weight: bold;
+    }
+    h1{
+    font-size: 4rem;
+    line-height: 10vh;
+    }
+    h2{
+    font-size: 3.5rem;
+    line-height: 7vh;
+    }
+    a, i{
+    color: #e42424;
+    }
+    button{
+    color: white;
+    font-size: 1.9rem;
+    background: linear-gradient(to right, #6cc1e2 0%, #392f7a 100%);
+    padding: 10px; 
+    }
+    /* FOOTER */
+    footer{
+    background-color: rgb(238,238,238);
+    }
+    #social{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 15px;
+    }
+    #smaller{
+    text-align: center;
+    font-size: 0.5em;
+    }
+  
+    /* RESPONSIVE */

@@ -1,0 +1,89 @@
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.formflex{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+.pippo{
+    margin-right: 20px;
+}
+.formclass{
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+footer{
+margin-top: 50px;
+margin-left: 10%;
+}
+
+@media screen and (max-width:480px) {
+    button{
+        font-size: 1rem;
+    }
+    a{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+        margin-bottom: 0px;
+    }
+    p{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.3rem;
+    }
+    
+      .formflex{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-top: 5px;
+      }
+      #social{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+      }
+    }
+      @media screen and (min-width:481px) {
+        button{
+            font-size: 1.5rem;
+        }
+        a{
+            font-size: 1.5rem;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+        h2{
+            font-size: 1.8rem;
+        }
+        h3{
+            font-size: 1.5rem;
+        }
+        .formflex{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            width: 100%;
+            margin-top: 5px;
+          }
+      
+        #social{
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+        }
+}

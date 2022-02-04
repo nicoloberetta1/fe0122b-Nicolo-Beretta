@@ -1,0 +1,111 @@
+#epico{
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20%;
+    text-align: initial;
+    margin-bottom: 4rem;
+    }
+    h1, .paragrafi h2, #developer h2{
+    margin-bottom: 1.7rem;
+    }
+    .paragrafi{
+    text-align: center;
+    }
+    #trio{
+    display: flex;
+    padding-left: 15px;
+    }
+    #developer{
+    background-color: #0c0633;
+    color: white;
+    text-align: center;
+    margin: 3rem;
+    padding: 20%;
+    }
+    #container{
+    display: flex;
+    justify-content: center;
+    }
+    aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 1.5rem;
+    }
+  @media screen and (max-width:480px) {
+      button{
+          font-size: 1rem;
+      }
+      a{
+          font-size: 1rem;
+      }
+      h1{
+          font-size: 2rem;
+      }
+      p{
+          font-size: 1rem;
+      }
+      h2{
+          font-size: 1.5rem;
+      }
+      h3{
+          font-size: 1.3rem;
+      }
+      #trio{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+      }
+      #container{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+      }
+      #social{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+  }
+
+  @media screen and (min-width:481px) {
+    button{
+        font-size: 1.5rem;
+    }
+    a{
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    #trio{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    #container{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    #social{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+    }
+}
