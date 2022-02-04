@@ -61,6 +61,7 @@ table{
       }
       .centro{
           text-align: center;
+          width: 100%;
       }
 }
 
@@ -90,6 +91,7 @@ table{
     }
   .centro{
       text-align: center;
+      width: 100%;
   }
     #social{
       display: flex;
