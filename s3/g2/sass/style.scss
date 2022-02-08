@@ -1,0 +1,55 @@
+@mixin caratteri {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    }
+
+    @mixin titoli {
+        color: violet;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bolder;
+        }
+
+        @mixin titoli2 {
+            color: green;
+            font-family: 'Open Sans', sans-serif;
+            font-weight:bold ;
+            
+        }
+
+        body{
+            @include caratteri()
+        }
+
+        body h1{
+            @include titoli()
+        }
+        
+        body h2{
+            @include titoli2()
+        }
+ 
+        header{
+            background-color: blue;
+            border-radius: 5px;
+        }
+        header nav a{
+            color: white;
+            text-decoration: none;
+             }
+       #main-menu ul{
+           display: block;
+       }
+       #main-menu li{
+           display: inline;
+       }
+        
+          #main{
+              width: 900px;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          #content{
+              
+              text-align: center;
+          }
