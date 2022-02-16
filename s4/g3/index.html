@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #blocco {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        #blocco.blue_bg{
+            background-color: blue;
+        }
+    </style>
+    <div id="blocco" onclick="onOffClasse()"></div>
+
+    <script>
+        var blocco = document.getElementById("blocco")
+        //blocco.style.backgroundColor = "red"
+        //blocco.classList.add( "blue_bg")
+        blocco.onclick = onOffClasse
+        function onOffClasse(){
+            var blocco = document.getElementById("blocco")
+            blocco.classList.toggle("blue_bg")
+        }
+        var pizza ={
+            gusto : "margherita",
+            prezzo : 5,
+            tipo : "napoletana"
+
+        } 
+        console.log(typeof pizza)
+        console.log(pizza.gusto)
+
+        pizza.gusto= "Diavola" //ho cambiato il valore 
+
+        console.log(pizza.gusto)
+
+//------------------------------------------------------------------------------
+//COME FUNZIONA THIS
+        function Pizza(g,p,t = "napoletana"){ //serve per dare un valore di default
+            this.gusto = g
+            this.prezzo = p
+            this.tipo = t
+            this.prezzoValuta = this.prezzo + "€" //per mettere + € a tutti i prezzi
+            this.mostraPrezzo= function (){
+                alert("il prezzo della pizza " + this.gusto + " è pari a " + this.prezzo + "€")
+
+            }
+            }
+        var diavola = new Pizza("Diavola", 2 )
+        var capricciosa = new Pizza("Capricciosa", 2, "napoletana")
+        var formaggi = new Pizza("4formaggi", 2, "napoletana")
+
+        formaggi.mostraPrezzo()
+
+        console.log(diavola, capricciosa, formaggi)
+
+
+
+
+    </script>
+
+
+</body>
+</html>
