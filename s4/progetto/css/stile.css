@@ -68,7 +68,7 @@ input {
     color: white;
 }
 .uguale:hover,
-.uguale input :hover{
+.uguale input:hover{
     background-color:blueviolet ;
     color: white;
 }
