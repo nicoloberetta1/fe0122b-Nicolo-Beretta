@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s5 g1</title>
+</head>
+
+<body>
+    <p id="timer"></p>
+    <p id="tempo"></p>
+    <button onclick="myStopFunction()">Stop time</button>
+    <script>
+        var dataAttuale = new Date();
+        console.log(dataAttuale);
+        alert(dataAttuale);
+
+        var a = new Date("january 01, 2021");
+        var b = a.getDate();
+        console.log(b);
+
+        var c = new Date("april 22, 2000 22:15:18");
+        var d = c.getHours();
+        var e = c.getMinutes();
+        var f = c.getSeconds();
+        console.log(d + ' ' + e + ' ' + f);
+
+        var millisecondi = Date.parse('2022, 02, 21');
+        console.log(millisecondi);
+
+        var g = new Date("2021-09-23T23:45Z");
+        console.log(g);
+
+        // timer setintervall js
+        setInterval(myTimer, 1000);
+
+        function myTimer() {
+            const date = new Date();
+            document.getElementById("timer").innerHTML = date.toLocaleTimeString();
+        }
+
+        //timer con bottone di stop
+        const myInterval = setInterval(tempon3, 1000);
+
+        function tempon3() {
+            const date = new Date();
+            document.getElementById("tempo").innerHTML = date.toLocaleTimeString();
+        }
+
+        function myStopFunction() {
+            clearInterval(myInterval);
+        }
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
