@@ -1,0 +1,63 @@
+.bottone {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bottone:hover, .bottone:focus {
+    background-color: #2980B9;
+  }
+  
+  .contenitore {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .contenuto-contenitore {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  .contenuto-contenitore a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .contenitore a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+  h1{
+      text-align: center;
+      margin: 50px;
+  }
+
+  .ingrandimento{
+      font-size: 150px;
+  }
+
+  .maiuscolo{
+      text-transform: uppercase;
+  }
+
+  .colore{
+      color: blue;
+  }
+
+  .nascondi{
+      visibility: hidden;
+  }
+
+  .mostrare{
+      visibility: initial;
+      
+  }
