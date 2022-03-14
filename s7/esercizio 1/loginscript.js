@@ -1,5 +1,5 @@
-document.querySelector('#accedi').addEventListener('click', function(){
-
+document.querySelector('#accedi').addEventListener('click', function(e){
+    e.preventDefault();
     var username = document.querySelector('#username').value
     var password = document.querySelector('#password').value
     var listaUtenti = localStorage.getItem('utenti') == null ? [] : JSON.parse(localStorage.getItem('utenti'))
